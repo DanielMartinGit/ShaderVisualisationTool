@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Vendor">
+      <UniqueIdentifier>{935FDCD7-7F01-07AE-68BC-1A0254FD8DFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\GLAD">
+      <UniqueIdentifier>{FACDD015-6683-490B-EF77-43E25B2C400F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\GLAD\KHR">
+      <UniqueIdentifier>{6E49360D-DAD4-A3D1-E3E5-26C64FF0FFD1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\GLFW">
+      <UniqueIdentifier>{B2CED015-1E84-490B-A778-43E2132D400F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\ImGui">
+      <UniqueIdentifier>{FDF620D0-E959-B074-92DF-E82A7E217CF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\Libraries">
+      <UniqueIdentifier>{BFA61019-AB9F-2F6B-D4D1-14F0C0290F77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\Libraries\Framework">
+      <UniqueIdentifier>{FCDD8548-E8ED-3119-51A7-96373DD620B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\Libraries\GLFW">
+      <UniqueIdentifier>{5E716C3C-CADD-2737-93D1-BF94FFFC499F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vendor\STB">
+      <UniqueIdentifier>{0B237327-F7DA-B474-60E2-8DD04CB94F65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Window">
+      <UniqueIdentifier>{74C3D837-607B-1A85-C982-F3E0B559B575}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vendor\GLAD\KHR\khrplatform.h">
+      <Filter>Vendor\GLAD\KHR</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\GLAD\glad.h">
+      <Filter>Vendor\GLAD</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\GLFW\glfw3.h">
+      <Filter>Vendor\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\GLFW\glfw3native.h">
+      <Filter>Vendor\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imconfig.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imgui.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imgui_impl_glfw.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imgui_impl_opengl3.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imgui_internal.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imgui_stdlib.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imstb_rectpack.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imstb_textedit.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\ImGui\imstb_truetype.h">
+      <Filter>Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_c_lexer.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_connected_components.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_divide.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_ds.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_dxt.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_easy_font.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_herringbone_wang_tile.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_hexwave.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_image.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_image_resize.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_image_write.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_include.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_leakcheck.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_rect_pack.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_sprintf.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_textedit.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_tilemap_editor.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_truetype.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\STB\stb_voxel_render.h">
+      <Filter>Vendor\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window\Window.h">
+      <Filter>src\Window</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Vendor\GLAD\glad.c">
+      <Filter>Vendor\GLAD</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui_demo.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui_draw.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui_impl_glfw.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui_impl_opengl3.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui_stdlib.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui_tables.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\ImGui\imgui_widgets.cpp">
+      <Filter>Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\STB\stb_vorbis.c">
+      <Filter>Vendor\STB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window\Window.cpp">
+      <Filter>src\Window</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vendor\Libraries\Framework\Framework.lib">
+      <Filter>Vendor\Libraries\Framework</Filter>
+    </None>
+    <None Include="Vendor\Libraries\GLFW\glfw3.dll">
+      <Filter>Vendor\Libraries\GLFW</Filter>
+    </None>
+    <None Include="Vendor\Libraries\GLFW\glfw3.lib">
+      <Filter>Vendor\Libraries\GLFW</Filter>
+    </None>
+    <None Include="Vendor\Libraries\GLFW\glfw3_mt.lib">
+      <Filter>Vendor\Libraries\GLFW</Filter>
+    </None>
+    <None Include="Vendor\Libraries\GLFW\glfw3dll.lib">
+      <Filter>Vendor\Libraries\GLFW</Filter>
+    </None>
+  </ItemGroup>
+</Project>

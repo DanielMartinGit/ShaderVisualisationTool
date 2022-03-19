@@ -1,0 +1,16 @@
+﻿cl : command line warning D9025: overriding '/MT' with '/MDd'
+  glad.c
+  stb_vorbis.c
+  Generating Code...
+cl : command line warning D9025: overriding '/MT' with '/MDd'
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_opengl3.cpp
+  imgui_stdlib.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  Window.cpp
+  Generating Code...
+  Framework.vcxproj -> C:\Users\danie\Desktop\ShaderVisualisationTool\bin\Debug-windows-x86_64\Framework\Framework.lib

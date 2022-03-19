@@ -1,0 +1,3 @@
+﻿cl : command line warning D9025: overriding '/MT' with '/MDd'
+  EntryPoint.cpp
+  GUI.vcxproj -> C:\Users\danie\Desktop\ShaderVisualisationTool\bin\Debug-windows-x86_64\GUI\GUI.exe
