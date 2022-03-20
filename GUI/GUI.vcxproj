@@ -86,11 +86,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\EntryPoint\EntryPoint.cpp" />
+    <ClCompile Include="src\ShaderToolApplication\ShaderToolApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Framework\Framework.vcxproj">
       <Project>{1362EE31-7FCC-A2A8-C80A-544E34B480FD}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ShaderToolApplication\ShaderToolApplication.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

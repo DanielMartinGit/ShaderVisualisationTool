@@ -138,6 +138,7 @@
     <ClInclude Include="src\Window\Window.h">
       <Filter>src\Window</Filter>
     </ClInclude>
+    <ClInclude Include="src\Initialisation\Initialisation.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Vendor\GLAD\glad.c">

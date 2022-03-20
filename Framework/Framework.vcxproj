@@ -89,6 +89,7 @@ IF EXIST ..\bin\Release-windows-x86_64\Framework\Framework.lib\ (xcopy /Q /E /Y 
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Initialisation\Initialisation.h" />
     <ClInclude Include="Vendor\GLAD\KHR\khrplatform.h" />
     <ClInclude Include="Vendor\GLAD\glad.h" />
     <ClInclude Include="Vendor\GLFW\glfw3.h" />
