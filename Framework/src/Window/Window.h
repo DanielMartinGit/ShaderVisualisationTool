@@ -25,6 +25,7 @@ namespace Framework
 			GLFWwindow& GetCurrentWindow() { return *m_Window; }
 
 		protected:
+			ImGuiID m_DockSpaceID = 0;
 			const char* m_GLSLVersion = "#version 460";
 			GLFWwindow* m_Window;
 	};

@@ -6,6 +6,9 @@ ShaderTool::Application::~Application() {}
 void ShaderTool::Application::InitApp()
 {
 	InitWindow(1024, 768, "Shader Tool");
+
+	m_PanelManager.AddPanel("Viewport", &m_Viewport);
+
 	MainApplicationLoop();
 }
 
@@ -37,10 +40,13 @@ void ShaderTool::Application::ProcessInput()
 
 void ShaderTool::Application::Update(float deltaTime)
 {
-
+	m_Scene.Update(deltaTime);
 }
 
 void ShaderTool::Application::Render() 
 {
-
+	BeginFrame();
+	m_Scene.Render();
+	m_PanelManager.RenderActivePanels();
+	EndFrame();
 }

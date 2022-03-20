@@ -13,6 +13,10 @@ void Framework::Window::InitWindow(uint32_t width, uint32_t height, const char* 
 
 void Framework::Window::BeginFrame()
 {
+	// Clear the screen for the next frame
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
 	// Create a new frame for ImGui
 	ImGui_ImplOpenGL3_NewFrame();
 	ImGui_ImplGlfw_NewFrame();

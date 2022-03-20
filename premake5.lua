@@ -35,6 +35,8 @@ project "Framework"
 		"%prj.name/Vendor/GLFW/",
 		"%prj.name/Vendor/ImGui/",
 		"%prj.name/Vendor/STB/",
+    "%prj.name/Vendor/GLM/",
+    "%prj.name/Vendor/PFD/"
 	}
 
 	filter "system:windows"

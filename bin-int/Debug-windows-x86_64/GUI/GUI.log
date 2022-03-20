@@ -1,5 +1,4 @@
 ﻿cl : command line warning D9025: overriding '/MT' with '/MDd'
-  EntryPoint.cpp
-  ShaderToolApplication.cpp
-  Generating Code...
+  Viewport.cpp
+C:\Users\danie\Desktop\ShaderTool\GUI\src\Panels\Viewport\Viewport.cpp(12,64): warning C4312: 'type cast': conversion from 'uint32_t' to 'ImTextureID' of greater size
   GUI.vcxproj -> C:\Users\danie\Desktop\ShaderTool\bin\Debug-windows-x86_64\GUI\GUI.exe

@@ -60,6 +60,7 @@ namespace Framework
 
 				glfwMakeContextCurrent(window);
 				glfwSetFramebufferSizeCallback(window, FramebufferSizeCallback);
+				glfwSetWindowAttrib(window, GLFW_RESIZABLE, false);
 
 				return window;
 			}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="EntryPoint">
+      <UniqueIdentifier>{419769CF-2D4F-AB1C-9656-8478822D460D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderToolApplication">
+      <UniqueIdentifier>{6E70DC12-DADC-970D-A3D0-2F6B0FFCB975}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ShaderToolApplication\ShaderToolApplication.h">
+      <Filter>ShaderToolApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Panels\Viewport\Viewport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\EntryPoint\EntryPoint.cpp">
+      <Filter>EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderToolApplication\ShaderToolApplication.cpp">
+      <Filter>ShaderToolApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Panels\Viewport\Viewport.cpp" />
+  </ItemGroup>
+</Project>
