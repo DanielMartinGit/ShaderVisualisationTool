@@ -37,6 +37,8 @@ void Framework::ShaderProgram::Link()
 		{
 			glDeleteShader(shader.GetShader());
 		}
+
+		std::cout << "Shaders linked : " << GetShadersLoaded() << std::endl;
 	}
 }
 

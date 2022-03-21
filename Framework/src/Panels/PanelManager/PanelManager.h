@@ -3,6 +3,7 @@
 #include "../BasePanel/BasePanel.h"
 
 #include "../../../../GUI/src/Panels/Viewport/Viewport.h"
+#include "../../../../GUI/src/Panels/Resources/Resources.h"
 
 #include <unordered_map>
 

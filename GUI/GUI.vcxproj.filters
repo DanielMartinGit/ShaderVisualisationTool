@@ -13,6 +13,7 @@
       <Filter>ShaderToolApplication</Filter>
     </ClInclude>
     <ClInclude Include="src\Panels\Viewport\Viewport.h" />
+    <ClInclude Include="src\Panels\Resources\Resources.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EntryPoint\EntryPoint.cpp">
@@ -22,5 +23,6 @@
       <Filter>ShaderToolApplication</Filter>
     </ClCompile>
     <ClCompile Include="src\Panels\Viewport\Viewport.cpp" />
+    <ClCompile Include="src\Panels\Resources\Resources.cpp" />
   </ItemGroup>
 </Project>

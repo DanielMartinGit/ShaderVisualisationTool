@@ -2,8 +2,9 @@
 
 #include "../../../Framework/src/Initialisation/Initialisation.h"
 #include "../../../Framework/src/Window/Window.h"
-#include "../../../Framework/src/Panels/PanelManager/PanelManager.h"
 #include "../../../Framework/src/Scene/Scene.h"
+
+#include "../../../Framework/src/Panels/PanelManager/PanelManager.h"
 
 namespace ShaderTool
 {
@@ -27,5 +28,6 @@ namespace ShaderTool
 
 		private:
 			Panels::Viewport m_Viewport;
+			Panels::Resources m_Resources;
 	};
 }

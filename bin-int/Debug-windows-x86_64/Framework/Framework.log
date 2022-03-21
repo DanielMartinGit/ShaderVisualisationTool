@@ -1,5 +1,6 @@
 ﻿cl : command line warning D9025: overriding '/MT' with '/MDd'
   PanelManager.cpp
+  Primitives.cpp
   Scene.cpp
   Generating Code...
   Framework.vcxproj -> C:\Users\danie\Desktop\ShaderTool\bin\Debug-windows-x86_64\Framework\Framework.lib

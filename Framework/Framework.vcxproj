@@ -579,6 +579,10 @@ IF EXIST ..\bin\Release-windows-x86_64\Framework\Framework.lib\ (xcopy /Q /E /Y 
     <ClCompile Include="src\Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res\shaders\fragment.frag" />
+    <None Include="res\shaders\vertex.vert">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+    </None>
     <None Include="Vendor\Libraries\Framework\Framework.lib" />
     <None Include="Vendor\Libraries\GLFW\glfw3.dll" />
     <None Include="Vendor\Libraries\GLFW\glfw3.lib" />

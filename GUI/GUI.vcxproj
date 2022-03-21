@@ -85,11 +85,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Panels\Resources\Resources.h" />
     <ClInclude Include="src\Panels\Viewport\Viewport.h" />
     <ClInclude Include="src\ShaderToolApplication\ShaderToolApplication.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EntryPoint\EntryPoint.cpp" />
+    <ClCompile Include="src\Panels\Resources\Resources.cpp" />
     <ClCompile Include="src\Panels\Viewport\Viewport.cpp" />
     <ClCompile Include="src\ShaderToolApplication\ShaderToolApplication.cpp" />
   </ItemGroup>

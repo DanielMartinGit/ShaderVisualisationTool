@@ -1545,5 +1545,7 @@
     <None Include="Vendor\Libraries\GLFW\glfw3dll.lib">
       <Filter>Vendor\Libraries\GLFW</Filter>
     </None>
+    <None Include="res\shaders\vertex.vert" />
+    <None Include="res\shaders\fragment.frag" />
   </ItemGroup>
 </Project>

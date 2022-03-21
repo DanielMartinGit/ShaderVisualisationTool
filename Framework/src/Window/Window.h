@@ -26,7 +26,7 @@ namespace Framework
 
 		protected:
 			ImGuiID m_DockSpaceID = 0;
-			const char* m_GLSLVersion = "#version 460";
+			const char* m_GLSLVersion = "#version 440";
 			GLFWwindow* m_Window;
 	};
 }
