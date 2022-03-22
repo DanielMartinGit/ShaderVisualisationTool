@@ -1,8 +1,10 @@
 #pragma once
 
+#include "../Shaders/Shader.h"
+#include "../../../GUI/src/Panels/Console/Console.h"
+
 #include "../../../Vendor/GLAD/glad.h"
 #include "../../../Vendor/GLM/gtc/type_ptr.hpp"
-#include "../Shaders/Shader.h"
 
 #include <iostream>
 #include <unordered_map>

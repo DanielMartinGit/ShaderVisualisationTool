@@ -8,14 +8,18 @@ Framework::ShaderProgram::~ShaderProgram() {}
 
 void Framework::ShaderProgram::CreateShader(Framework::Shader& shader)
 {
-	shader.SetShader(glCreateShader(shader.GetShaderType()));
+	shader.InitialiseShader(glCreateShader(shader.GetShaderType()));
+
 	glShaderSource(shader.GetShader(), 1, &shader.m_ShaderCode, NULL);
 	glCompileShader(shader.GetShader());
 
+	Panels::Console::PrintToConsole(Panels::MessageType::MESSAGE, shader.m_ShaderCode);	
+
 	if (CheckShaderCompilation(shader.GetShader()))
 	{
-		shader.SetIsCompiled(true);
 		m_Shaders.push_back(shader);
+		shader.SetIsCompiled(true);
+		Panels::Console::PrintToConsole(Panels::MessageType::MESSAGE, "Shader loaded");
 	}
 }
 
@@ -38,7 +42,7 @@ void Framework::ShaderProgram::Link()
 			glDeleteShader(shader.GetShader());
 		}
 
-		std::cout << "Shaders linked : " << GetShadersLoaded() << std::endl;
+		Panels::Console::PrintToConsole(Panels::MessageType::MESSAGE, "Shaders linked");
 	}
 }
 
@@ -56,6 +60,10 @@ bool Framework::ShaderProgram::CheckShaderCompilation(GLuint shader)
 	if (!success)
 	{
 		glGetShaderInfoLog(shader, 512, NULL, infoLog);
+		std::string errorMessage;
+		errorMessage.append(infoLog);
+
+		Panels::Console::PrintToConsole(Panels::MessageType::ISSUE, errorMessage.c_str());
 		std::cout << infoLog << std::endl;
 		return false;
 	}
@@ -74,8 +82,10 @@ bool Framework::ShaderProgram::CheckShaderLink(GLuint shaderProgram)
 	if (!success)
 	{
 		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-		std::cout << infoLog << std::endl;
-		return false;
+		std::string errorMessage;
+		errorMessage.append(infoLog);
+
+		Panels::Console::PrintToConsole(Panels::MessageType::ISSUE, errorMessage.c_str());		return false;
 	}
 	else
 	{

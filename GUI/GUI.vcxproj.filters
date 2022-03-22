@@ -14,6 +14,7 @@
     </ClInclude>
     <ClInclude Include="src\Panels\Viewport\Viewport.h" />
     <ClInclude Include="src\Panels\Resources\Resources.h" />
+    <ClInclude Include="src\Panels\Console\Console.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EntryPoint\EntryPoint.cpp">
@@ -24,5 +25,6 @@
     </ClCompile>
     <ClCompile Include="src\Panels\Viewport\Viewport.cpp" />
     <ClCompile Include="src\Panels\Resources\Resources.cpp" />
+    <ClCompile Include="src\Panels\Console\Console.cpp" />
   </ItemGroup>
 </Project>

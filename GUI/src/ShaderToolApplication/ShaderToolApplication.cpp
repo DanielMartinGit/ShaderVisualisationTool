@@ -9,7 +9,9 @@ void ShaderTool::Application::InitApp()
 
 	m_PanelManager.AddPanel("Viewport", &m_Viewport);
 	m_PanelManager.AddPanel("Resources", &m_Resources);
+	m_PanelManager.AddPanel("Console", &m_Console);
 
+	m_Scene.InitScene();
 	m_Resources.SetLoadedShaderCount(m_Scene.GetShaderProgram().GetShadersLoaded());
 
 	MainApplicationLoop();
@@ -17,8 +19,6 @@ void ShaderTool::Application::InitApp()
 
 void ShaderTool::Application::MainApplicationLoop()
 {
-	m_Scene.InitScene();
-
 	while (!glfwWindowShouldClose(&GetCurrentWindow()))
 	{
 		// Input

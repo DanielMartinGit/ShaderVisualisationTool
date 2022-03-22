@@ -27,6 +27,7 @@ namespace ShaderTool
 			Framework::PanelManager m_PanelManager;
 
 		private:
+			Panels::Console m_Console;
 			Panels::Viewport m_Viewport;
 			Panels::Resources m_Resources;
 	};

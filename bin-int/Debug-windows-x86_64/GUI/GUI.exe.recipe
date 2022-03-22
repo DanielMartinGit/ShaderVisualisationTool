@@ -5,11 +5,7 @@
       <FullPath>C:\Users\danie\Desktop\ShaderTool\bin\Debug-windows-x86_64\GUI\GUI.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles>
-    <ContentFile>
-      <FullPath>C:\Users\danie\Desktop\ShaderTool\Framework\res\shaders\vertex.vert</FullPath>
-    </ContentFile>
-  </ContentFiles>
+  <ContentFiles />
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

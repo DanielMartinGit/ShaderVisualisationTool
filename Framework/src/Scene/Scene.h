@@ -30,9 +30,5 @@ namespace Framework
 
 		private:
 			Primitives::Triangle m_Triangle;
-
-		private:
-			Framework::Shader m_BaseVertex;
-			Framework::Shader m_BaseFrag;
 	};
 }
