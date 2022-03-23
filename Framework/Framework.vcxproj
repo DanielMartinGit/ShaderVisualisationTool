@@ -92,6 +92,7 @@ IF EXIST ..\bin\Release-windows-x86_64\Framework\Framework.lib\ (xcopy /Q /E /Y 
     <ClInclude Include="src\Panels\BasePanel\BasePanel.h" />
     <ClInclude Include="src\Panels\PanelManager\PanelManager.h" />
     <ClInclude Include="src\PrimitiveBuilder\Primitives.h" />
+    <ClInclude Include="src\Utils\FileDialog.h" />
     <ClInclude Include="Vendor\GLAD\KHR\khrplatform.h" />
     <ClInclude Include="Vendor\GLAD\glad.h" />
     <ClInclude Include="Vendor\GLFW\glfw3.h" />

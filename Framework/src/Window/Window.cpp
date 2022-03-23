@@ -6,7 +6,7 @@ Framework::Window::~Window() {}
 void Framework::Window::InitWindow(uint32_t width, uint32_t height, const char* title)
 {
 	Framework::Init::InitOpenGL();
-	m_Window = Framework::Init::InitWindow(1024, 768, "Shader Tool");
+	m_Window = Framework::Init::InitWindow(width, height, title);
 	Framework::Init::InitGLAD();
 	Framework::Init::InitImGui(m_Window, m_GLSLVersion);
 }

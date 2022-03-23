@@ -30,5 +30,6 @@ namespace ShaderTool
 			Panels::Console m_Console;
 			Panels::Viewport m_Viewport;
 			Panels::Resources m_Resources;
+			Panels::SceneProperties m_SceneProperties;
 	};
 }

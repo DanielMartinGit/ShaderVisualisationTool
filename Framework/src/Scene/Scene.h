@@ -19,14 +19,14 @@ namespace Framework
 			void Render();
 
 		public:
-			Framework::ShaderProgram& GetShaderProgram() { return m_ShaderProgram; }
+			static Framework::ShaderProgram& GetShaderProgram() { return m_ShaderProgram; }
 
 		public:
 			static uint32_t GetRenderedScene() { return m_FBO.GetFramebufferObject(); }
 
 		private:
 			static inline Framework::Framebuffer m_FBO;
-			Framework::ShaderProgram m_ShaderProgram;
+			static inline Framework::ShaderProgram m_ShaderProgram;
 
 		private:
 			Primitives::Triangle m_Triangle;

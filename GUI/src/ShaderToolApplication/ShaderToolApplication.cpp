@@ -5,11 +5,12 @@ ShaderTool::Application::~Application() {}
 
 void ShaderTool::Application::InitApp()
 {
-	InitWindow(1024, 768, "Shader Tool");
+	InitWindow(1700, 768, "Shader Tool");
 
 	m_PanelManager.AddPanel("Viewport", &m_Viewport);
 	m_PanelManager.AddPanel("Resources", &m_Resources);
 	m_PanelManager.AddPanel("Console", &m_Console);
+	m_PanelManager.AddPanel("Scene Properties", &m_SceneProperties);
 
 	m_Scene.InitScene();
 	m_Resources.SetLoadedShaderCount(m_Scene.GetShaderProgram().GetShadersLoaded());

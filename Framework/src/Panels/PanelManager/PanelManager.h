@@ -5,6 +5,7 @@
 #include "../../../../GUI/src/Panels/Viewport/Viewport.h"
 #include "../../../../GUI/src/Panels/Resources/Resources.h"
 #include "../../../../GUI/src/Panels/Console/Console.h"
+#include "../../../../GUI/src/Panels/SceneProperties/SceneProperties.h"
 
 #include <unordered_map>
 

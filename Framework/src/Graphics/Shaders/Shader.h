@@ -40,7 +40,10 @@ namespace Framework
 					shaderStream << shaderFile.rdbuf();
 
 					m_ShaderString = shaderStream.str();
+
 					SetShaderCode(m_ShaderString.c_str());
+					SetShaderPath(path);
+
 					shaderFile.close();
 
 					Panels::Console::PrintToConsole(Panels::MessageType::MESSAGE, "Loaded shader file");
@@ -55,10 +58,12 @@ namespace Framework
 			GLuint& GetShaderType() { return m_ShaderType; }
 			uint32_t& GetShader() { return m_Shader; }
 			bool& GetIsCompiled() { return m_IsCompiled; }
+			std::string& GetShaderPath() { return m_ShaderPath; }
 
 			void InitialiseShader(uint32_t shader) { m_Shader = shader; }
 			void SetShaderCode(const char* shaderCode) { m_ShaderCode = shaderCode; }
 			void SetShaderType(GLuint shaderType) { m_ShaderType = shaderType; }
+			void SetShaderPath(std::string shaderPath) { m_ShaderPath = shaderPath; }
 			void SetIsCompiled(bool compiled) { m_IsCompiled = compiled; }
 
 		public:
@@ -66,6 +71,8 @@ namespace Framework
 			const char* m_ShaderCode;
 
 			std::string m_ShaderString;
+			std::string m_ShaderPath;
+
 			uint32_t m_Shader;
 			GLuint m_ShaderType;
 	};

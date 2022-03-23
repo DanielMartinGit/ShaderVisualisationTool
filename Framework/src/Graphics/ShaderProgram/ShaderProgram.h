@@ -67,6 +67,7 @@ namespace Framework
 		public:
 			GLuint GetActiveShaderProgram() { return m_ShaderProgramID; }
 			size_t GetShadersLoaded() { return m_Shaders.size(); }
+			std::string& GetShaderPath(int index) { return m_Shaders[index].GetShaderPath(); }
 
 		private:
 			std::vector<Framework::Shader> m_Shaders;

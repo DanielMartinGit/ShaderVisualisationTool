@@ -1479,6 +1479,7 @@
     <ClInclude Include="src\Panels\BasePanel\BasePanel.h" />
     <ClInclude Include="src\Panels\PanelManager\PanelManager.h" />
     <ClInclude Include="src\PrimitiveBuilder\Primitives.h" />
+    <ClInclude Include="src\Utils\FileDialog.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Vendor\GLAD\glad.c">

@@ -12,7 +12,7 @@ void Framework::Scene::InitScene()
 	m_ShaderProgram.CreateShader(baseFrag);
 	m_ShaderProgram.Link();
 
-	m_FBO.InitialiseFramebuffer(1000, 700);
+	m_FBO.InitialiseFramebuffer(2000, 700);
 	m_Triangle.InitTriangle();
 }
 

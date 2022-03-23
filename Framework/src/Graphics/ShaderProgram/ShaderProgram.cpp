@@ -17,8 +17,8 @@ void Framework::ShaderProgram::CreateShader(Framework::Shader& shader)
 
 	if (CheckShaderCompilation(shader.GetShader()))
 	{
-		m_Shaders.push_back(shader);
 		shader.SetIsCompiled(true);
+		m_Shaders.push_back(shader);
 		Panels::Console::PrintToConsole(Panels::MessageType::MESSAGE, "Shader loaded");
 	}
 }

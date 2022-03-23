@@ -1,5 +1,5 @@
 ﻿cl : command line warning D9025: overriding '/MT' with '/MDd'
   PanelManager.cpp
-  Scene.cpp
-  Generating Code...
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\danie\Desktop\ShaderTool\Framework\Vendor\GLAD\glad.h(33): message : see previous definition of 'APIENTRY'
   Framework.vcxproj -> C:\Users\danie\Desktop\ShaderTool\bin\Debug-windows-x86_64\Framework\Framework.lib

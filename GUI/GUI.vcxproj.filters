@@ -15,6 +15,7 @@
     <ClInclude Include="src\Panels\Viewport\Viewport.h" />
     <ClInclude Include="src\Panels\Resources\Resources.h" />
     <ClInclude Include="src\Panels\Console\Console.h" />
+    <ClInclude Include="src\Panels\SceneProperties\SceneProperties.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EntryPoint\EntryPoint.cpp">
@@ -26,5 +27,6 @@
     <ClCompile Include="src\Panels\Viewport\Viewport.cpp" />
     <ClCompile Include="src\Panels\Resources\Resources.cpp" />
     <ClCompile Include="src\Panels\Console\Console.cpp" />
+    <ClCompile Include="src\Panels\SceneProperties\SceneProperties.cpp" />
   </ItemGroup>
 </Project>

@@ -87,6 +87,7 @@
   <ItemGroup>
     <ClInclude Include="src\Panels\Console\Console.h" />
     <ClInclude Include="src\Panels\Resources\Resources.h" />
+    <ClInclude Include="src\Panels\SceneProperties\SceneProperties.h" />
     <ClInclude Include="src\Panels\Viewport\Viewport.h" />
     <ClInclude Include="src\ShaderToolApplication\ShaderToolApplication.h" />
   </ItemGroup>
@@ -94,6 +95,7 @@
     <ClCompile Include="src\EntryPoint\EntryPoint.cpp" />
     <ClCompile Include="src\Panels\Console\Console.cpp" />
     <ClCompile Include="src\Panels\Resources\Resources.cpp" />
+    <ClCompile Include="src\Panels\SceneProperties\SceneProperties.cpp" />
     <ClCompile Include="src\Panels\Viewport\Viewport.cpp" />
     <ClCompile Include="src\ShaderToolApplication\ShaderToolApplication.cpp" />
   </ItemGroup>

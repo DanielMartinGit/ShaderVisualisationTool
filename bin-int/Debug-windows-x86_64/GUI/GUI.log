@@ -1,9 +1,13 @@
 ﻿cl : command line warning D9025: overriding '/MT' with '/MDd'
   EntryPoint.cpp
-  Resources.cpp
-  Viewport.cpp
-C:\Users\danie\Desktop\ShaderTool\GUI\src\Panels\Viewport\Viewport.cpp(12,64): warning C4312: 'type cast': conversion from 'uint32_t' to 'ImTextureID' of greater size
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\danie\Desktop\ShaderTool\Framework\Vendor\GLAD\glad.h(33): message : see previous definition of 'APIENTRY'
+  SceneProperties.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\danie\Desktop\ShaderTool\Framework\Vendor\GLAD\glad.h(33): message : see previous definition of 'APIENTRY'
   ShaderToolApplication.cpp
-C:\Users\danie\Desktop\ShaderTool\GUI\src\ShaderToolApplication\ShaderToolApplication.cpp(15,80): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\danie\Desktop\ShaderTool\Framework\Vendor\GLAD\glad.h(33): message : see previous definition of 'APIENTRY'
+C:\Users\danie\Desktop\ShaderTool\GUI\src\ShaderToolApplication\ShaderToolApplication.cpp(16,80): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   GUI.vcxproj -> C:\Users\danie\Desktop\ShaderTool\bin\Debug-windows-x86_64\GUI\GUI.exe
