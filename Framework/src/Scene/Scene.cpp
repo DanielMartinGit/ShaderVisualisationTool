@@ -13,7 +13,7 @@ void Framework::Scene::InitScene()
 	m_ShaderProgram.Link();
 
 	m_FBO.InitialiseFramebuffer(2000, 700);
-	m_Triangle.InitTriangle();
+	m_Triangle.Init();
 }
 
 void Framework::Scene::ProcessInput()
@@ -29,6 +29,7 @@ void Framework::Scene::Update(double deltaTime)
 void Framework::Scene::Render()
 {
 	m_FBO.Bind();
-	m_Triangle.RenderTriangle(m_ShaderProgram);
+	m_WireframeMode ? glPolygonMode(GL_FRONT_AND_BACK, GL_LINE) : glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	m_Triangle.Render(m_ShaderProgram);
 	m_FBO.Unbind();
 }

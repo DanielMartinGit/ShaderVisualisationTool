@@ -11,9 +11,9 @@ void ShaderTool::Application::InitApp()
 	m_PanelManager.AddPanel("Resources", &m_Resources);
 	m_PanelManager.AddPanel("Console", &m_Console);
 	m_PanelManager.AddPanel("Scene Properties", &m_SceneProperties);
+	m_PanelManager.AddPanel("Script Editor", &m_ScriptEditor);
 
 	m_Scene.InitScene();
-	m_Resources.SetLoadedShaderCount(m_Scene.GetShaderProgram().GetShadersLoaded());
 
 	MainApplicationLoop();
 }
@@ -46,6 +46,7 @@ void ShaderTool::Application::ProcessInput()
 
 void ShaderTool::Application::Update(float deltaTime)
 {
+	m_Resources.SetLoadedShaderCount(m_Scene.GetShaderProgram().GetShadersLoaded());
 	m_Scene.Update(deltaTime);
 }
 

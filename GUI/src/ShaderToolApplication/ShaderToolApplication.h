@@ -27,9 +27,14 @@ namespace ShaderTool
 			Framework::PanelManager m_PanelManager;
 
 		private:
+			Primitives::Square m_Square;
+			Primitives::Triangle m_Triangle;
+
+		private:
 			Panels::Console m_Console;
 			Panels::Viewport m_Viewport;
 			Panels::Resources m_Resources;
 			Panels::SceneProperties m_SceneProperties;
+			Panels::ScriptEditor m_ScriptEditor;
 	};
 }

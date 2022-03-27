@@ -4,6 +4,7 @@ Panels::SceneProperties::SceneProperties()
 {
 	m_VertexShaderPath = "";
 	m_FragmentShaderPath = "";
+	m_ComputeShaderPath = "";
 }
 Panels::SceneProperties::~SceneProperties() {}
 
@@ -11,7 +12,7 @@ void Panels::SceneProperties::OnImGuiRender()
 {
 	ImGui::Begin("Scene Properties", &GetActiveState(), ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
 
-	ImGui::Text("Vertex");
+	ImGui::Text("Vert");
 	ImGui::SameLine();
 	ImGui::InputText("##VertexShaderFilePath", &m_VertexShaderPath);
 	ImGui::SameLine();
@@ -22,7 +23,7 @@ void Panels::SceneProperties::OnImGuiRender()
 		Utils::FileDialog::OpenFile("Select Vertex Shader File", ".", m_VertexShaderPath, filter, pfd::opt::none);
 	}
 
-	ImGui::Text("Fragment");
+	ImGui::Text("Frag");
 	ImGui::SameLine();
 	ImGui::InputText("##FragmentShaderFilePath", &m_FragmentShaderPath);
 	ImGui::SameLine();
@@ -33,7 +34,22 @@ void Panels::SceneProperties::OnImGuiRender()
 		Utils::FileDialog::OpenFile("Select Fragment Shader File", ".", m_FragmentShaderPath, filter, pfd::opt::none);
 	}
 
-	if (ImGui::Button("Link", m_ButtonSize))
+	ImGui::Text("Comp");
+	ImGui::SameLine();
+	ImGui::InputText("##ComputeShaderFilePath", &m_ComputeShaderPath);
+	ImGui::SameLine();
+
+	if (ImGui::Button("Choose Fragment", m_ButtonSize))
+	{
+		std::vector<std::string> filter = { "Compute Files", "*.comp" };
+		Utils::FileDialog::OpenFile("Select Compute Shader File", ".", m_ComputeShaderPath, filter, pfd::opt::none);
+	}
+
+	ImGui::Text("Wireframe Mode");
+	ImGui::SameLine();
+	ImGui::Checkbox("##Wireframe", &Framework::Scene::GetWireframeMode());
+
+	if (ImGui::Button("Render", m_ButtonSize))
 	{
 		Framework::Shader vert = Framework::Shader(m_VertexShaderPath.c_str(), GL_VERTEX_SHADER);
 		Framework::Shader frag = Framework::Shader(m_FragmentShaderPath.c_str(), GL_FRAGMENT_SHADER);

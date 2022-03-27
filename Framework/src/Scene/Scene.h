@@ -22,11 +22,13 @@ namespace Framework
 			static Framework::ShaderProgram& GetShaderProgram() { return m_ShaderProgram; }
 
 		public:
+			static bool& GetWireframeMode() { return m_WireframeMode; }
 			static uint32_t GetRenderedScene() { return m_FBO.GetFramebufferObject(); }
 
 		private:
 			static inline Framework::Framebuffer m_FBO;
 			static inline Framework::ShaderProgram m_ShaderProgram;
+			static inline bool m_WireframeMode;
 
 		private:
 			Primitives::Triangle m_Triangle;

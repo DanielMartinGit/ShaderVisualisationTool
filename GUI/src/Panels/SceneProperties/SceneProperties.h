@@ -20,6 +20,7 @@ namespace Panels
 		private:
 			std::string m_VertexShaderPath;
 			std::string m_FragmentShaderPath;
+			std::string m_ComputeShaderPath;
 
 			ImVec2 m_ButtonSize { 50, 20 };
 	};

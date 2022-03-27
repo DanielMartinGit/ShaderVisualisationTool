@@ -1480,6 +1480,8 @@
     <ClInclude Include="src\Panels\PanelManager\PanelManager.h" />
     <ClInclude Include="src\PrimitiveBuilder\Primitives.h" />
     <ClInclude Include="src\Utils\FileDialog.h" />
+    <ClInclude Include="src\Utils\FileSystem.h" />
+    <ClInclude Include="Vendor\TextEditor\TextEditor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Vendor\GLAD\glad.c">
@@ -1528,7 +1530,7 @@
       <Filter>src\Window</Filter>
     </ClCompile>
     <ClCompile Include="src\Panels\PanelManager\PanelManager.cpp" />
-    <ClCompile Include="src\PrimitiveBuilder\Primitives.cpp" />
+    <ClCompile Include="Vendor\TextEditor\TextEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Vendor\Libraries\Framework\Framework.lib">
