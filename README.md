@@ -30,7 +30,4 @@
 * Click the "Render" button to view your changes
 
 # Screenshots
-![image](https://user-images.githubusercontent.com/19360613/160282391-3cf9e7c5-f51a-4e8d-a8e6-c220b050374e.png)
-![image](https://user-images.githubusercontent.com/19360613/160282410-63fccf02-b8a0-460e-bd7c-e486b4cfbea1.png)
-![image](https://user-images.githubusercontent.com/19360613/160282437-175eb249-774d-4004-a7d1-ae498bcecbbe.png)
-![image](https://user-images.githubusercontent.com/19360613/160282465-719dbb54-7c14-4b0d-8b1d-e2a35054eb52.png)
+![image](https://user-images.githubusercontent.com/19360613/161786338-d88c74a4-3263-43f3-9368-729c116fbe39.png)
