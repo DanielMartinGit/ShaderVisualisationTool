@@ -89,11 +89,6 @@ IF EXIST ..\bin\Release-windows-x86_64\Framework\Framework.lib\ (xcopy /Q /E /Y 
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Panels\BasePanel\BasePanel.h" />
-    <ClInclude Include="src\Panels\PanelManager\PanelManager.h" />
-    <ClInclude Include="src\PrimitiveBuilder\Primitives.h" />
-    <ClInclude Include="src\Utils\FileDialog.h" />
-    <ClInclude Include="src\Utils\FileSystem.h" />
     <ClInclude Include="Vendor\GLAD\KHR\khrplatform.h" />
     <ClInclude Include="Vendor\GLAD\glad.h" />
     <ClInclude Include="Vendor\GLFW\glfw3.h" />
@@ -553,17 +548,21 @@ IF EXIST ..\bin\Release-windows-x86_64\Framework\Framework.lib\ (xcopy /Q /E /Y 
     <ClInclude Include="Vendor\STB\stb_tilemap_editor.h" />
     <ClInclude Include="Vendor\STB\stb_truetype.h" />
     <ClInclude Include="Vendor\STB\stb_voxel_render.h" />
+    <ClInclude Include="Vendor\TextEditor\TextEditor.h" />
     <ClInclude Include="src\Graphics\FramebufferObject\Framebuffer.h" />
     <ClInclude Include="src\Graphics\ShaderProgram\ShaderProgram.h" />
     <ClInclude Include="src\Graphics\Shaders\Shader.h" />
     <ClInclude Include="src\Initialisation\Initialisation.h" />
+    <ClInclude Include="src\Panels\BasePanel\BasePanel.h" />
+    <ClInclude Include="src\Panels\PanelManager\PanelManager.h" />
+    <ClInclude Include="src\Primitives\Primitives.h" />
     <ClInclude Include="src\Scene\Scene.h" />
     <ClInclude Include="src\Time\Time.h" />
+    <ClInclude Include="src\Utils\FileDialog.h" />
+    <ClInclude Include="src\Utils\FileSystem.h" />
     <ClInclude Include="src\Window\Window.h" />
-    <ClInclude Include="Vendor\TextEditor\TextEditor.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Panels\PanelManager\PanelManager.cpp" />
     <ClCompile Include="Vendor\GLAD\glad.c" />
     <ClCompile Include="Vendor\GLM\detail\glm.cpp" />
     <ClCompile Include="Vendor\ImGui\imgui.cpp" />
@@ -575,15 +574,14 @@ IF EXIST ..\bin\Release-windows-x86_64\Framework\Framework.lib\ (xcopy /Q /E /Y 
     <ClCompile Include="Vendor\ImGui\imgui_tables.cpp" />
     <ClCompile Include="Vendor\ImGui\imgui_widgets.cpp" />
     <ClCompile Include="Vendor\STB\stb_vorbis.c" />
+    <ClCompile Include="Vendor\TextEditor\TextEditor.cpp" />
     <ClCompile Include="src\Graphics\FramebufferObject\Framebuffer.cpp" />
     <ClCompile Include="src\Graphics\ShaderProgram\ShaderProgram.cpp" />
+    <ClCompile Include="src\Panels\PanelManager\PanelManager.cpp" />
     <ClCompile Include="src\Scene\Scene.cpp" />
     <ClCompile Include="src\Window\Window.cpp" />
-    <ClCompile Include="Vendor\TextEditor\TextEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\shaders\fragment.frag" />
-    <None Include="res\shaders\vertex.vert" />
     <None Include="Vendor\Libraries\Framework\Framework.lib" />
     <None Include="Vendor\Libraries\GLFW\glfw3.dll" />
     <None Include="Vendor\Libraries\GLFW\glfw3.lib" />

@@ -1,11 +1,6 @@
 #pragma once
-#include "../../../../Framework/src/Panels/BasePanel/BasePanel.h"
+#include "../Menus/ShaderCreator/ShaderCreator.h"
 #include "../../../../Framework/src/Scene/Scene.h"
-#include "../../../../Framework/src/Utils/FileDialog.h"
-#include "../../../../Framework/src/Utils/FileSystem.h"
-
-#include "../../../../Framework/Vendor/ImGui/imgui_stdlib.h"
-#include "../../../../Framework/Vendor/ImGui/imgui.h"
 #include "../../../../Framework/Vendor/TextEditor/TextEditor.h"
 
 namespace Panels
@@ -22,9 +17,13 @@ namespace Panels
 			void OnImGuiRender() override;
 
 		private:
-			TextEditor::LanguageDefinition m_ScriptLanguage;
 			TextEditor m_TextEditor;
+			Menus::ShaderCreator m_ShaderCreator;
+
+		private:
+			std::string m_OpenedFileTitle;
 			std::string m_ShaderCode;
 			std::string m_ShaderPath;
+			bool m_ShowShaderCreationMenu;
 	};
 }

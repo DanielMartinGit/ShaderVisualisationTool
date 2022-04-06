@@ -14,7 +14,6 @@ void ShaderTool::Application::InitApp()
 	m_PanelManager.AddPanel("Script Editor", &m_ScriptEditor);
 
 	m_Scene.InitScene();
-
 	MainApplicationLoop();
 }
 
@@ -53,9 +52,22 @@ void ShaderTool::Application::Update(float deltaTime)
 void ShaderTool::Application::Render() 
 {
 	BeginFrame();
+	ImGui::Begin("Editor", 0, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoDocking);
 
-	m_PanelManager.RenderActivePanels();
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
+	ImVec2 vWindowSize = ImGui::GetMainViewport()->Size;
+	ImVec2 vPos0 = ImGui::GetMainViewport()->Pos;
+
+	ImGui::SetWindowPos(ImVec2((float)vPos0.x, (float)vPos0.y), ImGuiCond_Always);
+	ImGui::SetWindowSize(ImVec2((float)vWindowSize.x, (float)vWindowSize.y), ImGuiCond_Always);
+	ImGui::PopStyleVar();
+	
+	m_DockSpaceID = ImGui::GetID("DockSpace");
+	ImGui::DockSpace(m_DockSpaceID, ImVec2(0.f, 0.f), ImGuiDockNodeFlags_None | ImGuiDockNodeFlags_PassthruCentralNode);
+	
 	m_Scene.Render();
+	m_PanelManager.RenderActivePanels();
 
+	ImGui::End();
 	EndFrame();
 }

@@ -66,7 +66,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\Framework\Vendor\Libraries\GLFW;..\Frmework\Vendor\Libraries\Framework;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Framework\src;..\Framework\Vendor\Libraries\GLFW;..\Frmework\Vendor\Libraries\Framework;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -81,11 +81,12 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\Framework\Vendor\Libraries\GLFW;..\Frmework\Vendor\Libraries\Framework;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Framework\src;..\Framework\Vendor\Libraries\GLFW;..\Frmework\Vendor\Libraries\Framework;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\Panels\Console\Console.h" />
+    <ClInclude Include="src\Panels\Menus\ShaderCreator\ShaderCreator.h" />
     <ClInclude Include="src\Panels\Resources\Resources.h" />
     <ClInclude Include="src\Panels\SceneProperties\SceneProperties.h" />
     <ClInclude Include="src\Panels\ScriptEditor\ScriptEditor.h" />
@@ -95,6 +96,7 @@
   <ItemGroup>
     <ClCompile Include="src\EntryPoint\EntryPoint.cpp" />
     <ClCompile Include="src\Panels\Console\Console.cpp" />
+    <ClCompile Include="src\Panels\Menus\ShaderCreator\ShaderCreator.cpp" />
     <ClCompile Include="src\Panels\Resources\Resources.cpp" />
     <ClCompile Include="src\Panels\SceneProperties\SceneProperties.cpp" />
     <ClCompile Include="src\Panels\ScriptEditor\ScriptEditor.cpp" />

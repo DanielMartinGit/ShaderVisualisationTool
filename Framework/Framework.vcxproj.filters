@@ -49,6 +49,9 @@
     <Filter Include="Vendor\STB">
       <UniqueIdentifier>{0B237327-F7DA-B474-60E2-8DD04CB94F65}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Vendor\TextEditor">
+      <UniqueIdentifier>{8E7FD72E-FA95-D5C4-430D-61E6AF62A64C}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
@@ -67,11 +70,26 @@
     <Filter Include="src\Initialisation">
       <UniqueIdentifier>{1D118709-09F5-475F-7255-42B25E5832E1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Panels">
+      <UniqueIdentifier>{DFE6F326-CB9E-3574-34A6-0ED0207DD064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Panels\BasePanel">
+      <UniqueIdentifier>{D9C625FA-C555-AFC3-6E74-C3BE5AE2BF69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Panels\PanelManager">
+      <UniqueIdentifier>{395B1BC0-A592-6357-AE9C-C77A1A538A50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PrimitiveBuilder">
+      <UniqueIdentifier>{3C2E08C7-28BD-9190-D1DB-A58BBD49A236}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Scene">
       <UniqueIdentifier>{0A06D2B3-7670-862A-BFAE-37D02B58647F}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Time">
       <UniqueIdentifier>{EB0B26CF-D7D8-80DA-00F2-6E82EC1DB668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Utils">
+      <UniqueIdentifier>{4D9AFFB3-B904-B42A-0243-65D06EEC917F}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Window">
       <UniqueIdentifier>{74C3D837-607B-1A85-C982-F3E0B559B575}</UniqueIdentifier>
@@ -1455,6 +1473,9 @@
     <ClInclude Include="Vendor\STB\stb_voxel_render.h">
       <Filter>Vendor\STB</Filter>
     </ClInclude>
+    <ClInclude Include="Vendor\TextEditor\TextEditor.h">
+      <Filter>Vendor\TextEditor</Filter>
+    </ClInclude>
     <ClInclude Include="src\Graphics\FramebufferObject\Framebuffer.h">
       <Filter>src\Graphics\FramebufferObject</Filter>
     </ClInclude>
@@ -1467,21 +1488,30 @@
     <ClInclude Include="src\Initialisation\Initialisation.h">
       <Filter>src\Initialisation</Filter>
     </ClInclude>
+    <ClInclude Include="src\Panels\BasePanel\BasePanel.h">
+      <Filter>src\Panels\BasePanel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Panels\PanelManager\PanelManager.h">
+      <Filter>src\Panels\PanelManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Primitives\Primitives.h">
+      <Filter>src\PrimitiveBuilder</Filter>
+    </ClInclude>
     <ClInclude Include="src\Scene\Scene.h">
       <Filter>src\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Time\Time.h">
       <Filter>src\Time</Filter>
     </ClInclude>
+    <ClInclude Include="src\Utils\FileDialog.h">
+      <Filter>src\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\FileSystem.h">
+      <Filter>src\Utils</Filter>
+    </ClInclude>
     <ClInclude Include="src\Window\Window.h">
       <Filter>src\Window</Filter>
     </ClInclude>
-    <ClInclude Include="src\Panels\BasePanel\BasePanel.h" />
-    <ClInclude Include="src\Panels\PanelManager\PanelManager.h" />
-    <ClInclude Include="src\PrimitiveBuilder\Primitives.h" />
-    <ClInclude Include="src\Utils\FileDialog.h" />
-    <ClInclude Include="src\Utils\FileSystem.h" />
-    <ClInclude Include="Vendor\TextEditor\TextEditor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Vendor\GLAD\glad.c">
@@ -1517,11 +1547,17 @@
     <ClCompile Include="Vendor\STB\stb_vorbis.c">
       <Filter>Vendor\STB</Filter>
     </ClCompile>
+    <ClCompile Include="Vendor\TextEditor\TextEditor.cpp">
+      <Filter>Vendor\TextEditor</Filter>
+    </ClCompile>
     <ClCompile Include="src\Graphics\FramebufferObject\Framebuffer.cpp">
       <Filter>src\Graphics\FramebufferObject</Filter>
     </ClCompile>
     <ClCompile Include="src\Graphics\ShaderProgram\ShaderProgram.cpp">
       <Filter>src\Graphics\ShaderProgram</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Panels\PanelManager\PanelManager.cpp">
+      <Filter>src\Panels\PanelManager</Filter>
     </ClCompile>
     <ClCompile Include="src\Scene\Scene.cpp">
       <Filter>src\Scene</Filter>
@@ -1529,8 +1565,6 @@
     <ClCompile Include="src\Window\Window.cpp">
       <Filter>src\Window</Filter>
     </ClCompile>
-    <ClCompile Include="src\Panels\PanelManager\PanelManager.cpp" />
-    <ClCompile Include="Vendor\TextEditor\TextEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Vendor\Libraries\Framework\Framework.lib">
@@ -1548,7 +1582,5 @@
     <None Include="Vendor\Libraries\GLFW\glfw3dll.lib">
       <Filter>Vendor\Libraries\GLFW</Filter>
     </None>
-    <None Include="res\shaders\fragment.frag" />
-    <None Include="res\shaders\vertex.vert" />
   </ItemGroup>
 </Project>

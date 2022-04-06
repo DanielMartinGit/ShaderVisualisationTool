@@ -13,7 +13,6 @@ namespace Utils
 		public:
 			// Options are multiselect (for multiple files), None, Force Overwrite
 			static void OpenFile(std::string windowTitle, std::string initialPath, std::string& output, std::vector<std::string> filters = { "All Files", "*" }, pfd::opt option = pfd::opt::none)
-
  			{
 				auto selected = pfd::open_file(windowTitle, initialPath, filters, option).result();
 
@@ -26,6 +25,12 @@ namespace Utils
 
 					Panels::Console::PrintToConsole(Panels::MessageType::ACTION, message.c_str());
 				}
+			}
+
+			static std::string SelectFolder(const char* title)
+			{
+				std::string filePath = pfd::select_folder(title).result();
+				return filePath;
 			}
 	};
 }

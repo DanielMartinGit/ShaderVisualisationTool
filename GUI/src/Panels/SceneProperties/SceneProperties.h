@@ -16,12 +16,18 @@ namespace Panels
 
 		public:
 			void OnImGuiRender() override;
+			void OnImGuiRenderVertexUniforms();
+			void OnImGuiRenderFragmentUniforms();
 
 		private:
+			const char* m_PrimitiveTypes[2] = {"Triangle", "Quad"};
 			std::string m_VertexShaderPath;
 			std::string m_FragmentShaderPath;
 			std::string m_ComputeShaderPath;
 
-			ImVec2 m_ButtonSize { 50, 20 };
+			ImVec2 m_ButtonSize { 35, 20 };
+
+			size_t m_VertexUniformCount;
+			size_t m_FragmentUniformCount;
 	};
 }

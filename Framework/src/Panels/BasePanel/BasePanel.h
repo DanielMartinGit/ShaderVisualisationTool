@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../../../Vendor/ImGui/imgui.h"
+#include "../../../Vendor/ImGui/imgui_stdlib.h"
 
 namespace Framework
 {

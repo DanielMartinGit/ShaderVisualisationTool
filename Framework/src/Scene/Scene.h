@@ -1,7 +1,7 @@
 #pragma once
 #include "../Graphics/ShaderProgram/ShaderProgram.h"
 #include "../Graphics/FramebufferObject/Framebuffer.h"
-#include "../PrimitiveBuilder/Primitives.h"
+#include "../Primitives/Primitives.h"
 
 namespace Framework
 {
@@ -32,5 +32,6 @@ namespace Framework
 
 		private:
 			Primitives::Triangle m_Triangle;
+			Primitives::Quad m_Quad;
 	};
 }

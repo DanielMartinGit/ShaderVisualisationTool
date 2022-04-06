@@ -35,8 +35,8 @@ project "Framework"
 		"%prj.name/Vendor/GLFW/",
 		"%prj.name/Vendor/ImGui/",
 		"%prj.name/Vendor/STB/",
-    "%prj.name/Vendor/GLM/",
-    "%prj.name/Vendor/PFD/"
+		"%prj.name/Vendor/GLM/",
+		"%prj.name/Vendor/PFD/"
 	}
 
 	filter "system:windows"
@@ -79,6 +79,7 @@ project "GUI"
 
 	libdirs
 	{
+		"Framework/src/",
 		"Framework/Vendor/Libraries/GLFW",
 		"Frmework/Vendor/Libraries/Framework"
 	}

@@ -1,10 +1,9 @@
 #pragma once
 
 #include "../../../Framework/src/Initialisation/Initialisation.h"
+#include "../../../Framework/src/Panels/PanelManager/PanelManager.h"
 #include "../../../Framework/src/Window/Window.h"
 #include "../../../Framework/src/Scene/Scene.h"
-
-#include "../../../Framework/src/Panels/PanelManager/PanelManager.h"
 
 namespace ShaderTool
 {
@@ -25,10 +24,6 @@ namespace ShaderTool
 		private:
 			Framework::Scene m_Scene;
 			Framework::PanelManager m_PanelManager;
-
-		private:
-			Primitives::Square m_Square;
-			Primitives::Triangle m_Triangle;
 
 		private:
 			Panels::Console m_Console;

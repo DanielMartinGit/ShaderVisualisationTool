@@ -1,4 +1,5 @@
 #pragma once
+#include <filesystem>
 #include <fstream>
 #include <sstream>
 #include <iostream>
@@ -20,7 +21,8 @@ namespace Utils
 					std::ifstream shaderFile(path);
 					shaderStream << shaderFile.rdbuf();
 
-					m_ShaderString = shaderStream.str();
+					if(shaderFile.good())
+						m_ShaderString = shaderStream.str();
 
 					shaderFile.close();
 				}
@@ -30,6 +32,14 @@ namespace Utils
 				}
 
 				return m_ShaderString;
+			}
+
+			static void CreateShaderFile(const char* path, const char* fileName, const char* fileExtension)
+			{
+				if (std::filesystem::exists(path))
+				{
+					std::ofstream(static_cast<std::string>(path) + "/" + static_cast<std::string>(fileName) + static_cast<std::string>(fileExtension));
+				}
 			}
 
 			static void SaveShaderFile(const char* path, const char* source)
